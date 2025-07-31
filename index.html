@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burger Heaven - Premium Burgers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">Burger<span>Heaven</span></a>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Premium Burgers Made with Love</h1>
+        <p>Handcrafted burgers using the freshest ingredients for an unforgettable taste experience</p>
+        <a href="#menu" class="btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="featured-section">
+    <div class="container">
+      <div class="featured-grid">
+        <div class="featured-item">
+          <i class="fas fa-hamburger"></i>
+          <h3>100% Fresh Beef</h3>
+          <p>Never frozen, always fresh premium beef</p>
+        </div>
+        <div class="featured-item">
+          <i class="fas fa-leaf"></i>
+          <h3>Organic Veggies</h3>
+          <p>Fresh organic vegetables in every bite</p>
+        </div>
+        <div class="featured-item">
+          <i class="fas fa-bread-slice"></i>
+          <h3>Artisan Buns</h3>
+          <p>Freshly baked buns daily</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Delicious Menu</h2>
+      <p class="section-subtitle">Choose from our selection of premium burgers</p>
+      
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="classic">Classic</button>
+        <button class="filter-btn" data-filter="premium">Premium</button>
+        <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+      </div>
+      
+      <div class="menu-container">
+        <div class="menu-card" data-category="classic">
+          <div class="menu-img">
+            <img src="images/menu1.jpg" alt="Classic Cheeseburger" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 25.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="premium">
+          <div class="menu-img">
+            <img src="images/menu2.jpg" alt="Bacon Deluxe" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 30.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="classic">
+          <div class="menu-img">
+            <img src="images/menu3.jpg" alt="Spicy Chicken" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 28.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="premium">
+          <div class="menu-img">
+            <img src="images/menu4.jpg" alt="Mushroom Swiss" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 32.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="vegetarian">
+          <div class="menu-img">
+            <img src="images/menu5.jpg" alt="Veggie Delight" />
+            <div class="menu-badge">Vegetarian</div>
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 27.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="classic">
+          <div class="menu-img">
+            <img src="images/menu6.jpg" alt="BBQ Burger" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 29.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="premium">
+          <div class="menu-img">
+            <img src="images/menu7.jpg" alt="Truffle Burger" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 31.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="classic">
+          <div class="menu-img">
+            <img src="images/menu8.jpg" alt="Double Cheeseburger" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 26.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="premium">
+          <div class="menu-img">
+            <img src="images/menu9.jpg" alt="Hawaiian Burger" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 33.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-card" data-category="vegetarian">
+          <div class="menu-img">
+            <img src="images/menu10.jpg" alt="Portobello Burger" />
+          </div>
+          <div class="menu-content">
+            <h3>Menu</h3>
+            <div class="menu-footer">
+              <span class="price">Rp 30.000</span>
+              <button class="add-to-cart"><i class="fas fa-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Burger Heaven</h3>
+          <p>Premium burgers made with love and the freshest ingredients. A taste experience you won't forget.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Popular Menu</h3>
+          <ul>
+            <li><a href="#">Classic Cheeseburger</a></li>
+            <li><a href="#">Bacon Deluxe</a></li>
+            <li><a href="#">Truffle Burger</a></li>
+            <li><a href="#">Veggie Delight</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get updates on new menu items and special offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Burger Heaven. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer> -->
+
+
+</body>
+</html>
